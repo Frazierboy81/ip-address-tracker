@@ -47,13 +47,24 @@
   
 </head>
 <body>
-
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  <div id="container">
+  <div id="container">  
   <form>
-    <h2 id="address-tracker">IP Adress Tracker: <input type="search" id="search-input"><button id="search-btn">></button></h2>
-  </form>
+    <h2 id="address-tracker">IP Adress Tracker</h2> 
+      <div id="input-field">
+        
+          <input type="text" id="search-input" placeholder="Search for any IP address or domain" required>
+          <button id="search-btn">></button>
+        
+      </div>
+    </form>
+    <div id="ip-info"> 
+      <ul id="local-info">
+          <li id="ip-address">IP Address:</li>
+          <li id="locate">Location:</li>
+          <li id="time-zone">Timezone:</li>
+          <li id="internet-service">ISP:</li>
+      </ul>
+    </div>   
   </div>
   <div id="map"></div>
   <div class="attribution">
