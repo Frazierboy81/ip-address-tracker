@@ -26,9 +26,12 @@ button {
     width: 44px;
     background-color: black;
     color: white;
-    margin-left: -4px;
-    border-radius: 8px;
+    margin-left: -6px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     margin-top: 70px;
+    padding-top: 10px;
+    padding-bottom: 6px;
 }
 
 #container{
