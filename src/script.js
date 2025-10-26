@@ -43,11 +43,14 @@ async function showMapData(event) {
 }
 
 
-form.addEventListener("submit", showMapData());
+form.addEventListener("submit", async (event) => {
+event.preventDefault();
+    
+  showMapData();
+})
 
 
-
-// document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("DOMContentLoaded", async () => {
   try {
     const res = await fetch(
       `https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}`
